@@ -99,7 +99,7 @@ public class MainActivity extends BridgeActivity {
         if (application instanceof Customerio) {
             Customerio customerio = new Customerio();
             customerio=(Customerio) customerio;
-            CustomerIO customerIO = new CustomerIO.Builder("YOUR-SITE-ID", "YOUR-API-KEY"", poko).build();
+            CustomerIO customerIO = new CustomerIO.Builder("YOUR-SITE-ID", "YOUR-API-KEY"", customerio).build();
         }
     }
 }
