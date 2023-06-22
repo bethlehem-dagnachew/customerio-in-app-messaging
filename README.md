@@ -76,6 +76,18 @@ dependencies {
     
 }
 ```
+
+
+create new java file and the following code
+```
+//Customerio.java
+import android.app.Application;
+
+public class Customerio extends Application {
+}
+```
+
+Add the following code on your mainActivity.java file
 ```
 //mainActivity.java
 import android.app.Application;
@@ -94,11 +106,5 @@ public class MainActivity extends BridgeActivity {
     }
 }
 ```
-```
-//Customerio.java
-import android.app.Application;
 
-public class Customerio extends Application {
-}
-```
 
