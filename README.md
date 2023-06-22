@@ -62,12 +62,12 @@ import { initializeCustomerIO } from '@/customer-io-in-app'
 onMounted(() => {
   initializeCustomerIO()
 })
-</script>```
+</script>
+```
 
 If you are using Customer.io for a Vue.js Capacitor mobile application, add the following code to your build.gradle and MainActivity.java files, in addition to the above code. And create additional Customerio.java file
 
-```
-//build.gradle
+```//build.gradle
 dependencies {
    
     implementation 'io.customer.android:tracking:<latest version>'
@@ -79,8 +79,7 @@ dependencies {
 
 
 create new java file and the following code
-```
-//Customerio.java
+```//Customerio.java
 import android.app.Application;
 
 public class Customerio extends Application {
@@ -88,8 +87,7 @@ public class Customerio extends Application {
 ```
 
 Add the following code on your mainActivity.java file
-```
-//mainActivity.java
+```//mainActivity.java
 import android.app.Application;
 import io.customer.sdk.CustomerIO;
 
