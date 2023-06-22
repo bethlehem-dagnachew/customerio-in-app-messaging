@@ -64,3 +64,41 @@ onMounted(() => {
 })
 </script>```
 
+If you are using Customer.io for a Vue.js Capacitor mobile application, add the following code to your build.gradle and MainActivity.java files, in addition to the above code. And create additional Customerio.java file
+
+```
+//build.gradle
+dependencies {
+   
+    implementation 'io.customer.android:tracking:<latest version>'
+    implementation 'io.customer.android:messaging-push-fcm:<latest version>'
+   
+    
+}
+```
+```
+//mainActivity.java
+import android.app.Application;
+import io.customer.sdk.CustomerIO;
+
+public class MainActivity extends BridgeActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Application application = getApplication();
+        if (application instanceof Customerio) {
+            Customerio customerio = new Customerio();
+            customerio=(Customerio) customerio;
+            CustomerIO customerIO = new CustomerIO.Builder("YOUR-SITE-ID", "YOUR-API-KEY"", poko).build();
+        }
+    }
+}
+```
+```
+//Customerio.java
+import android.app.Application;
+
+public class Customerio extends Application {
+}
+```
+
