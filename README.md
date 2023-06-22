@@ -58,7 +58,7 @@ Import the customerio.ts file into your App.vue and use onMount or mounted to in
 ```//app.vue
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { initializeCustomerIO } from '@/customer-io-in-app'
+import { initializeCustomerIO } from '@/customerio'
 onMounted(() => {
   initializeCustomerIO()
 })
