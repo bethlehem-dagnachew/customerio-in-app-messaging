@@ -2,7 +2,7 @@
 This customerio-inapp-messaging code enables seamless integration of Customer.io's in-app messaging feature into your web or mobile application. With this package, you can effortlessly engage and communicate with your users in real-time, delivering personalized messages and notifications directly within your application.
 If you are using Vue.js, add a separate TypeScript or JavaScript file, for example customerio.js or customerio.ts, and include the provided code from the index.ts file. Then, mount the created TypeScript or JavaScript file in your App.vue file.
 
-`//customer.ts
+```//customer.ts
 declare global {
   interface Window {
     _cio: {
@@ -51,16 +51,16 @@ export function initializeCustomerIO(): void {
     document.head.appendChild(t);
   }
 }
-`
+```
 
 Import the customerio.ts file into your App.vue and use onMount or mounted to initialize it.
 
-`//app.vue
+```//app.vue
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { initializeCustomerIO } from '@/customer-io-in-app'
 onMounted(() => {
   initializeCustomerIO()
 })
-</script>`
+</script>```
 
