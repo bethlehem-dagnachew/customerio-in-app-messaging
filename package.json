@@ -1,0 +1,24 @@
+{
+  "name": "customerio-in-app-messaging",
+  "version": "1.0.0",
+  "description": "The customerio-inapp-messaging package is that enables seamless integration of Customer.io's in-app messaging feature into your web or mobile application. With this package, you can effortlessly engage and communicate with your users in real-time, delivering personalized messages and notifications directly within your application.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bethlehem-dagnachew/customerio-in-app-messaging.git"
+  },
+  "keywords": [
+    "customer.io",
+    "in-app",
+    "messaging"
+  ],
+  "author": "Bethelehem Mulugeta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bethlehem-dagnachew/customerio-in-app-messaging/issues"
+  },
+  "homepage": "https://github.com/bethlehem-dagnachew/customerio-in-app-messaging#readme"
+}
